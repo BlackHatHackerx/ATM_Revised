@@ -5,7 +5,7 @@ using namespace std;
 
 
 int main()
-{    int pin; int choice;int amount=0; int withdraw;int deposit; int exit;int correct_pin=5420;string email; char transaction='n';
+{    int pin; int choice;int amount=0; int withdraw;int deposit; int exit;int correct_pin=5420;string email;
     cout<<"Welcome to ATM \n Please enter pincode.";
     cin>>pin;
     while(pin!=correct_pin)
@@ -19,7 +19,7 @@ int main()
         cin>>correct_pin;}
         }
 
-        do{cout<<" *****Introducing to you , The latesT, The best, ATM Service***** \n";
+        cout<<" *****Introducing to you , The latesT, The best, ATM Service***** \n";
         cout<<"1- Check Balance \n";
         cout<<"2- Withdraw amount \n";
         cout<<"3- Deposit amount \n";
@@ -50,7 +50,7 @@ int main()
                 if(deposit%10!=0)
                 cout<<"Sorry only in multiples of 10!/n Just kidding. \n";
                 amount=amount+deposit;
-                cout<<"***Amount  "<<deposit<<"  Deposited*** \n";
+                cout<<"***Amount "<<deposit<<"Deposited*** \n";
                 break;
             case 4:
                 cout<<"Helpline is down right now. Good luck";
@@ -75,20 +75,10 @@ cout<<"/n⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀�
 cout<<"/n⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿";
 
                 }
-        }
 
 
 
 
 
         }
-       while(choice!=6);
-       if(choice=6)
-        cout<<"Have you finished the Transaction? Are you sure you would like to quit?  (y/n)  ";
-        cin>>transaction;
-        }
-        while(transaction!='y');
-
-            cout<<"Thank you for using our ATM !!\n Please come back again.";
-
 }
